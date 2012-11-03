@@ -5,13 +5,14 @@ Passing Parameters
 ------------------
 
     def foo(options)
-      assert_valid_keys :email, :nickname
+      options.assert_valid_keys :email, :nickname
       puts options.fetch :email
+      puts options.fetch :nickname, 'John'
     end
 
 
-See also: [assert_valid_keys][], [fetch][]
+See also: [Hash#assert_valid_keys][], [Hash#fetch][]
 
-[assert_valid_keys]: https://github.com/chrisoei/ruby-docs/blob/master/Hash/Hash%23assert_valid_keys.md
+[Hash#assert_valid_keys]: https://github.com/chrisoei/ruby-docs/blob/master/Hash/Hash%23assert_valid_keys.md
 
-[fetch]: https://github.com/chrisoei/ruby-docs/blob/master/Hash/Hash%23fetch.md
+[Hash#fetch]: https://github.com/chrisoei/ruby-docs/blob/master/Hash/Hash%23fetch.md
