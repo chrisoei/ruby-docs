@@ -2,17 +2,17 @@
 
 ## Usage
 
-require 'active_support'
+    require 'active_support'
 
-module Foo
+    module Foo
 
-  extend ActiveSupport::Concern
+      extend ActiveSupport::Concern
 
-  module ClassMethods
+      module ClassMethods
 
-    def this_is_a_class_method
+        def this_is_a_class_method
+        end
+
+      end
+
     end
-
-  end
-
-end
