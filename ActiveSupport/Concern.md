@@ -8,6 +8,10 @@
 
       extend ActiveSupport::Concern
 
+      included do
+        # Runs upon inclusion of module Foo
+      end
+
       module ClassMethods
 
         def this_is_a_class_method
